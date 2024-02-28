@@ -18,12 +18,20 @@ Dificuldades na Análise e Tomada de Decisão: A falta de dados precisos e em te
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste trabalho é informatizar o processo de controle de pedidos de montagem de óculos, agilizando e tendo maior controle sobre a cadeia de fabricação de uma lente, deste a solicitação da clínica até a entrega do produto. Detalhadamente, visando a construção de uma aplicação robusta, com práticas modernas, com suporte para futuras melhorias e novos recursos, será desenvolvido um sistema para uma fábrica de óculos, que os auxiliarão com a gestão de sua produção, comunicação com seus fornecedores e clientes, fora uma gestão de seus funcionários de forma mais simplificada, e se possível a geração de relatórios.
+Como objetivos específicos, podemos ressaltar:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+ [ul]Controle de estoque[/ul]
+ [ul]Controle de entrada e saída de recursos(armações, lentes e outros);
+- Controle de montagem de óculos(laboratório);
+Controle e Triagem do processo de criação dos óculos;
+Comunicação facilitada com clientes;
+Comunicação facilitada com fornecedores;
+Comunicação facilitada internamente(administração e laboratório);
+Gestão de recursos financeiros;
+Gestão de funcionários;
+Geração de relatório;
+
 
 ## Justificativa
 
