@@ -88,9 +88,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Antônia Tamires Silva de Carvalho    | Cadastrar nota fiscal e encaminha para ótica referente ao pedido     | Deixar ciente sobre o valor do pedido solicitado|
 |Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
-|Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
-|Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
-
+|Antônia Tamires Silva de Carvalho     | Ter acesso ao estoque e a solicitação de compra enviada pelo setor de montagem              | Repor estoque e aprovar ordem de compra ao fornecedor |
+|Wanderson Rodrigo Pinheiro     | Receber os pedidos enviados pelas óticas (clientes)             | Cadastrar serviço e dar início a montagem |
+|Samilly Sousa de Lima    | Enviar ordem de serviço para Antônia Tamires Silva de Carvalho aprovar serviço de terceirização das lentes   | Encaminhar aos laboratórios a terceirização do serviço |
+|Edcarlos Junior     | Acessar os pedidos em andamentos           | Atualizar o status de cada pedido |
+|Ótica (cliente)     | Acessar os pedidos em andamentos             | Receber o serviço de montagem|
+|Ótica (cliente)     | Cadastrar pedido         | Cadastrar serviço e dar início a montagem |
+|Opti Prime     | Cadastrar notas fiscais de entrada e verificar histórico de pedidos             | Gerar relatórios financeiro e atualizar estoque |
+|Perego     | Cadastrar notas fiscais de entrada e verificar histórico de pedidos            | Gerar relatórios financeiro e atualizar estoque |
+|FitLAB    | Cadastrar nota fiscal e manter atualizado os serviços de terceirização dos pedidos             | Acompanhar andamentos dos serviços e gerar relatórios financeiros |
+|UniLAB   | Cadastrar nota fiscal e manter atualizado os serviços de terceirização dos pedidos            | Acompanhar andamentos dos serviços e gerar relatórios financeiros|
 
 
 ## Requisitos
