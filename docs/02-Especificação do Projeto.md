@@ -86,9 +86,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Antônia Tamires 
-Silva de Carvalho    | Cadastrar nota fiscal e encaminha
-                       para ótica referente ao pedido     | Não esquecer de fazê-las               |
+|Antônia Tamires Silva de Carvalho    | Cadastrar nota fiscal e encaminha para ótica referente ao pedido     | NDeixar ciente sobre o valor do pedido solicitado|
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 
