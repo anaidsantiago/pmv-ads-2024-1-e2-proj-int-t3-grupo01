@@ -1,18 +1,20 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No contexto contemporâneo, a gestão eficiente da produção é um aspecto fundamental para o sucesso de qualquer empreendimento, especialmente quando se trata de ambientes altamente especializados, como laboratórios de montagem de óculos. A indústria óptica tem testemunhado avanços significativos nos últimos anos, impulsionados pela convergência entre tecnologia e inovação. Nesse sentido, a implantação de soluções tecnológicas direcionadas à automação e controle de processos torna-se crucial para otimizar a eficiência operacional, garantir a qualidade do produto final e atender às demandas do mercado.
+
+O presente projeto visa desenvolver uma aplicação interativa sob medida para o controle da produção de óculos em laboratórios especializados. Essa iniciativa surge da necessidade de superar os desafios inerentes à gestão manual dos processos de montagem, que frequentemente resultam em atrasos na entrega, inconsistências na qualidade e dificuldades de rastreabilidade. Ao integrar tecnologia de ponta com as particularidades do setor óptico, almejamos oferecer uma ferramenta abrangente e intuitiva que revolucione a maneira como os laboratórios de montagem de óculos operam.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Os laboratórios de montagem de óculos ainda enfrentam desafios significativos em termos de controle e gestão da produção. A predominância de processos manuais e a falta de integração entre as diferentes etapas de fabricação resultam em uma série de problemas operacionais e estratégicos que impactam negativamente a eficiência e a competitividade do negócio. Vejamos:
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Ineficiência na Gestão de Estoque: A falta de um sistema integrado para monitoramento do estoque de matéria-prima, componentes e produtos acabados dificulta a previsão de demanda e o reabastecimento oportuno. Isso pode levar a interrupções na produção devido à escassez de materiais ou ao excesso de inventário não utilizado.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Baixa Rastreabilidade e Controle de Qualidade: Sem um sistema adequado de rastreamento, é difícil identificar e corrigir rapidamente problemas de qualidade durante o processo de montagem. A falta de controle de qualidade efetivo pode resultar em produtos defeituosos ou abaixo dos padrões, comprometendo a reputação da empresa e a satisfação do cliente.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Desafios na Programação e Sequenciamento da Produção: A programação manual das atividades de produção muitas vezes leva a atrasos, conflitos de recursos e subutilização de capacidade. A ausência de uma ferramenta automatizada para otimizar o sequenciamento das tarefas e a alocação de recursos dificulta a maximização da eficiência produtiva.
+
+Dificuldades na Análise e Tomada de Decisão: A falta de dados precisos e em tempo real sobre o desempenho da produção dificulta a análise e a tomada de decisões estratégicas. Sem acesso a informações relevantes, os gestores podem ter dificuldade em identificar áreas de melhoria, oportunidades de eficiência e tendências de mercado.
 
 ## Objetivos
 
