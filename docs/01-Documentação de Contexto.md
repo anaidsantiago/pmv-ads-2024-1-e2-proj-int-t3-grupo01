@@ -21,16 +21,16 @@ Dificuldades na Análise e Tomada de Decisão: A falta de dados precisos e em te
 O objetivo geral deste trabalho é informatizar o processo de controle de pedidos de montagem de óculos, agilizando e tendo maior controle sobre a cadeia de fabricação de uma lente, deste a solicitação da clínica até a entrega do produto. Detalhadamente, visando a construção de uma aplicação robusta, com práticas modernas, com suporte para futuras melhorias e novos recursos, será desenvolvido um sistema para uma fábrica de óculos, que os auxiliarão com a gestão de sua produção, comunicação com seus fornecedores e clientes, fora uma gestão de seus funcionários de forma mais simplificada, e se possível a geração de relatórios.
 Como objetivos específicos, podemos ressaltar:
 
- [ul]Controle de estoque[/ul]
+ [ul]Controle de estoque
  [ul]Controle de entrada e saída de recursos(armações, lentes e outros);
-- Controle de montagem de óculos(laboratório);
-Controle e Triagem do processo de criação dos óculos;
-Comunicação facilitada com clientes;
-Comunicação facilitada com fornecedores;
-Comunicação facilitada internamente(administração e laboratório);
-Gestão de recursos financeiros;
-Gestão de funcionários;
-Geração de relatório;
+  [ul]ontrole de montagem de óculos(laboratório);
+ [ul]Controle e Triagem do processo de criação dos óculos;
+ [ul]Comunicação facilitada com clientes;
+ [ul]Comunicação facilitada com fornecedores;
+ [ul]Comunicação facilitada internamente(administração e laboratório);
+ [ul]Gestão de recursos financeiros;
+ [ul]Gestão de funcionários;
+ [ul]Geração de relatório; [/ul]
 
 
 ## Justificativa
