@@ -9,7 +9,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 #As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-###Antônia Tamires Silva de Carvalho
+### Antônia Tamires Silva de Carvalho
 Idade: 34 anos
 Cargo/ Função: Gerente do laboratório 
 
@@ -18,7 +18,7 @@ Escolaridade: Superior
 Descrição da sua ocupação: Supervisão administrativa, coordenar e desempenhar atividades referentes ao Laboratório; organizar e controlar estoque de laboratório.
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-###Wanderson Rodrigo Pinheiro
+### Wanderson Rodrigo Pinheiro
 Idade: 19 anos
 Cargo/ Função: Montador e supervisor
 
@@ -26,7 +26,7 @@ Escolaridade: Superior Incompleto
 
 Descrição da sua ocupação: Conferência de lentes, montagem de lentes manual e automático, adaptações, consertos em gerais, digitação do caderno de montagem, relatório mensal do caderno de montagem, atualização do estoque de lentes, manutenção, consertos e limpeza das máquinas, busca dos malotes, relatório de repasse de falta de equipamentos e lentes, organização e limpeza do laboratório, retirar e adicionar lentes no Dropbox, ajustes de relógios, remoção de antirreflexo, organizar e despachar malotes, montagem de moldes.
 
-###Samilly Sousa de Lima
+### Samilly Sousa de Lima
 Idade: 24 anos
 Cargo/ Função: Montador e auxiliar administrativo 
 
@@ -34,7 +34,7 @@ Escolaridade: Superior Incompleto
 
 Descrição da sua ocupação: Conferência de lentes, montagem de lentes automático, adaptações, consertos em gerais, atualização do estoque de lentes, limpeza das máquinas, relatório de repasse de falta de lentes, organização e limpeza do laboratório, relatório de saída de lentes, arquivar receitas virtuais, relatório de receitas não arquivadas, pedido de lentes Fitlab e Unilab, retirar e adicionar lentes no Dropbox, ajustes de relógios, remoção de antirreflexo, organização de malotes, montagem de moldes.
 
-###Edcarlos Junior
+### Edcarlos Junior
 Idade: 18 anos
 Cargo/ Função: auxiliar de montagem
 
@@ -42,27 +42,27 @@ Escolaridade: Ensino Médio
 
 Descrição da sua ocupação: Conferência de lentes, montagem de lentes automático, consertos de algumas armações, limpezas das máquinas, organização e limpeza do laboratório, arquivar receitas físicas, ajustes de alguns relógios, remoção de antirreflexo.
 
-###Ótica (cliente)
+### Ótica (cliente)
 Cargo/ Função: cliente que solicita o pedido de montagem dos óculos
 
 Descrição da sua ocupação: encaminhar pedido ao setor de montagem, solicitar nota de serviço, acompanhar o status do serviço contratado e verificar prazo de entrega.
 
-###Opti Prime
+### Opti Prime
 Cargo/ Função: fornecedor de produtos 
 
 Descrição da sua ocupação: fornece lentes multifocais e lentes filtro azul
 
-###Perego
+### Perego
 Cargo/ Função: distribuidor de lentes 
 
 Descrição da sua ocupação: fornece lentes Essilor, Zeiss, Hoya, Younger, Transitions
 
-###FIT LAB
+### FIT LAB
 Cargo/ Função: laboratório de apoio externo 
 
 Descrição da sua ocupação: terceirização de serviços - surfaçagem
 
-###UNILAB
+### UNILAB
 Cargo/ Função: laboratório de apoio externo
 
 Descrição da sua ocupação: terceirização de serviços - surfaçagem
