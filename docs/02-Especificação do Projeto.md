@@ -88,7 +88,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Antônia Tamires Silva de Carvalho    | Cadastrar nota fiscal e encaminha para ótica referente ao pedido     | Deixar ciente sobre o valor do pedido solicitado|
 |Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
-
+|Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
+|Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
 
 
 
