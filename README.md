@@ -14,6 +14,8 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Erika Rocha Negreiros
 * Naiana Mendonça Coelho
 * João Victor Antunes Faria Lima
+* João Gabriel dos Santos Rosa
+* Diana
 
 ## Orientador
 
