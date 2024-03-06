@@ -34,14 +34,6 @@ Escolaridade: Superior Incompleto
 
 Descrição da sua ocupação: Conferência de lentes, montagem de lentes automático, adaptações, consertos em gerais, atualização do estoque de lentes, limpeza das máquinas, relatório de repasse de falta de lentes, organização e limpeza do laboratório, relatório de saída de lentes, arquivar receitas virtuais, relatório de receitas não arquivadas, pedido de lentes Fitlab e Unilab, retirar e adicionar lentes no Dropbox, ajustes de relógios, remoção de antirreflexo, organização de malotes, montagem de moldes.
 
-### Edcarlos Junior
-Idade: 18 anos
-Cargo/ Função: auxiliar de montagem
-
-Escolaridade: Ensino Médio
-
-Descrição da sua ocupação: Conferência de lentes, montagem de lentes automático, consertos de algumas armações, limpezas das máquinas, organização e limpeza do laboratório, arquivar receitas físicas, ajustes de alguns relógios, remoção de antirreflexo.
-
 ### Ótica (cliente)
 Cargo/ Função: cliente que solicita o pedido de montagem dos óculos
 
@@ -52,20 +44,6 @@ Cargo/ Função: fornecedor de produtos
 
 Descrição da sua ocupação: fornece lentes multifocais e lentes filtro azul
 
-### Perego
-Cargo/ Função: distribuidor de lentes 
-
-Descrição da sua ocupação: fornece lentes Essilor, Zeiss, Hoya, Younger, Transitions
-
-### FIT LAB
-Cargo/ Função: laboratório de apoio externo 
-
-Descrição da sua ocupação: terceirização de serviços - surfaçagem
-
-### UNILAB
-Cargo/ Função: laboratório de apoio externo
-
-Descrição da sua ocupação: terceirização de serviços - surfaçagem
 
 
 
@@ -91,13 +69,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Antônia Tamires Silva de Carvalho     | Ter acesso ao estoque e a solicitação de compra enviada pelo setor de montagem              | Repor estoque e aprovar ordem de compra ao fornecedor |
 |Wanderson Rodrigo Pinheiro     | Receber os pedidos enviados pelas óticas (clientes)             | Cadastrar serviço e dar início a montagem |
 |Samilly Sousa de Lima    | Enviar ordem de serviço para Antônia Tamires Silva de Carvalho aprovar serviço de terceirização das lentes   | Encaminhar aos laboratórios a terceirização do serviço |
-|Edcarlos Junior     | Acessar os pedidos em andamentos           | Atualizar o status de cada pedido |
 |Ótica (cliente)     | Acessar os pedidos em andamentos             | Receber o serviço de montagem|
 |Ótica (cliente)     | Cadastrar pedido         | Cadastrar serviço e dar início a montagem |
 |Opti Prime     | Cadastrar notas fiscais de entrada e verificar histórico de pedidos             | Gerar relatórios financeiro e atualizar estoque |
-|Perego     | Cadastrar notas fiscais de entrada e verificar histórico de pedidos            | Gerar relatórios financeiro e atualizar estoque |
-|FitLAB    | Cadastrar nota fiscal e manter atualizado os serviços de terceirização dos pedidos             | Acompanhar andamentos dos serviços e gerar relatórios financeiros |
-|UniLAB   | Cadastrar nota fiscal e manter atualizado os serviços de terceirização dos pedidos            | Acompanhar andamentos dos serviços e gerar relatórios financeiros|
 
 
 ## Requisitos
