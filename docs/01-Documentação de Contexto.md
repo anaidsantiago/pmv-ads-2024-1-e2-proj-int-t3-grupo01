@@ -39,12 +39,15 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Atualmente, a gestão de um laboratório de montagem de óculos enfrenta desafios que podem ser superados com a adoção de um sistema automatizado. A necessidade de automação surge da busca por uma produção mais eficiente, redução de erros e aprimoramento da experiência do cliente.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Primeiramente, as diferentes etapas envolvidas na montagem de óculos, como o controle de estoque de lentes e armações, a verificação de prescrições e a montagem propriamente dita, demandam tempo e precisão. Um sistema automatizado simplificaria esses processos, agilizando a produção e minimizando possíveis enganos humanos.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além disso, a automação permitiria uma gestão mais eficaz do inventário, garantindo o abastecimento adequado de materiais e evitando a falta de itens essenciais. Isso resultaria em uma redução de atrasos na produção e uma melhor capacidade de atender à demanda dos clientes de forma oportuna.
+
+Outro aspecto importante é a necessidade de proporcionar uma experiência satisfatória aos clientes. Com um sistema automatizado, seria possível oferecer um serviço mais rápido e preciso, desde a escolha dos materiais até a entrega dos óculos prontos. Isso contribuiria para aumentar a satisfação do cliente e fortalecer a reputação do laboratório no mercado.
+
+Em resumo, a implementação de um sistema automatizado de gerenciamento é essencial para enfrentar os desafios atuais enfrentados pelo laboratório de montagem de óculos. Além de agilizar a produção e reduzir erros, a automação permitiria melhorar a experiência do cliente, tornando o laboratório mais competitivo e eficiente no mercado.
 
 ## Público-Alvo
 
