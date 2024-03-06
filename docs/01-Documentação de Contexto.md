@@ -22,10 +22,13 @@ O objetivo geral deste trabalho é informatizar o processo de controle de pedido
 Como objetivos específicos, podemos ressaltar:
 
 - Permitir controle de estoque:
+  
   - Controle de entrada e saída de recursos(armações, lentes e outros);
 -Permitir visualização dos atores ao processo de produção:
+
   - Status atual da produção;
 - Permitir o cadastro de atores que fazem parte do processo de pedido;
+
 - Permitir aos atores ações baseadas nos níveis de  permissão:
   - Cadastrar notas;
   - Cadastrar pedidos;
