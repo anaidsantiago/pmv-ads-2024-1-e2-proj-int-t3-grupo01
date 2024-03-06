@@ -102,8 +102,8 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
+|ID   | Restrição                                             |
+|-----|-------------------------------------------------------|
 |RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 23/06/2024. |
 |RE-02| O projeto deve ser planejado e executado dentro dos recursos financeiros disponíveis, incluindo custos relacionados a hardware, software, ferramentas de desenvolvimento e quaisquer outros gastos associados ao projeto. |
 |RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho. |
