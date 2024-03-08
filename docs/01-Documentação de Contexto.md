@@ -21,9 +21,8 @@ Dificuldades na Análise e Tomada de Decisão: A falta de dados precisos e em te
 O objetivo geral deste trabalho é informatizar o processo de controle de pedidos de montagem de óculos, agilizando e tendo maior controle sobre a cadeia de fabricação de uma lente, deste a solicitação da clínica até a entrega do produto.
 Como objetivos específicos, podemos ressaltar:
   - Permitir gerenciamento de estoque;
-  - Permitir visualização do status do processo de produção;
+  - Permitir visualização e atualização do status do processo de produção;
   - Permitir aos atores ações baseadas nos níveis de permissão;
-  - Permitir adição de novos atores;
 
 
 ## Justificativa
