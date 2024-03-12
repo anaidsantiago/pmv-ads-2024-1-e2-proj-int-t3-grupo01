@@ -15,35 +15,31 @@ Cargo/ Função: Gerente do laboratório
 
 Escolaridade: Superior
 
-Descrição da sua ocupação: Supervisão administrativa, coordenar e desempenhar atividades referentes ao Laboratório; organizar e controlar estoque de laboratório.
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Descrição da sua ocupação: A gerente é responsável pela supervisão geral das operações do laboratório de montagem de óculos. Toma decisões estratégicas relacionadas à produção, recursos humanos, finanças e estratégias de negócios.
+Monitora o desempenho operacional e financeiro do laboratório. Define metas e objetivos de produção, qualidade e eficiência. Utiliza o aplicativo para acessar dados e relatórios de desempenho, realizar análises e tomar decisões estratégicas para otimizar os processos de produção.
+
+### Marcela Lima
+Idade: 2 anos
+Cargo/ Função: Assistente administrativo 
+
+Escolaridade: Superior Completo
+
+Descrição da sua ocupação:  A assistente administrativa oferece suporte administrativo e logístico às operações do laboratório. É responsável pelo agendamento de pedidos, gerenciamento de estoque e comunicação com fornecedores. Auxilia na emissão de documentos, como faturas, ordens de compra e relatórios de produção. Utiliza o aplicativo para registrar estoque, verificar o status de entregas, gerenciar inventário e manter registros atualizados.
 
 ### Wanderson Rodrigo Pinheiro
 Idade: 19 anos
-Cargo/ Função: Montador e supervisor
+Cargo/ Função: Montador
 
 Escolaridade: Superior Incompleto
 
-Descrição da sua ocupação: Conferência de lentes, montagem de lentes manual e automático, adaptações, consertos em gerais, digitação do caderno de montagem, relatório mensal do caderno de montagem, atualização do estoque de lentes, manutenção, consertos e limpeza das máquinas, busca dos malotes, relatório de repasse de falta de equipamentos e lentes, organização e limpeza do laboratório, retirar e adicionar lentes no Dropbox, ajustes de relógios, remoção de antirreflexo, organizar e despachar malotes, montagem de moldes.
-
-### Samilly Sousa de Lima
-Idade: 24 anos
-Cargo/ Função: Montador e auxiliar administrativo 
-
-Escolaridade: Superior Incompleto
-
-Descrição da sua ocupação: Conferência de lentes, montagem de lentes automático, adaptações, consertos em gerais, atualização do estoque de lentes, limpeza das máquinas, relatório de repasse de falta de lentes, organização e limpeza do laboratório, relatório de saída de lentes, arquivar receitas virtuais, relatório de receitas não arquivadas, pedido de lentes Fitlab e Unilab, retirar e adicionar lentes no Dropbox, ajustes de relógios, remoção de antirreflexo, organização de malotes, montagem de moldes.
+Descrição da sua ocupação: O montador é responsável pela montagem física dos óculos de acordo com as especificações e padrões estabelecidos. Realiza tarefas como encaixe de lentes nas armações, ajustes de tamanho e montagem de componentes adicionais.
+Garante a qualidade e precisão do produto final, seguindo procedimentos e padrões de controle de qualidade. Utiliza o aplicativo para receber instruções de montagem, registrar o progresso do trabalho e reportar eventuais problemas ou defeitos identificados durante o processos.
 
 ### Ótica (cliente)
 Cargo/ Função: cliente que solicita o pedido de montagem dos óculos
 
-Descrição da sua ocupação: encaminhar pedido ao setor de montagem, solicitar nota de serviço, acompanhar o status do serviço contratado e verificar prazo de entrega.
-
-### Opti Prime
-Cargo/ Função: fornecedor de produtos 
-
-Descrição da sua ocupação: fornece lentes multifocais e lentes filtro azul
-
+Descrição da sua ocupação: A óptica representa o cliente externo que solicita a realização dos óculos ao laboratório de montagem, pode ser um profissional independente que possui uma óptica ou uma loja de varejo de produtos ópticos.
+Ele fornece as especificações do pedido, incluindo informações sobre a prescrição do cliente, tipo de lente, tratamentos desejados e preferências de armação. Espera uma comunicação clara e eficiente com o laboratório para acompanhar o status do pedido, fazer ajustes quando necessário e garantir a entrega dentro do prazo. Utiliza o aplicativo para enviar e acompanhar pedidos, verificar o status de produção, comunicar-se com o laboratório e garantir a satisfação do cliente final.
 
 
 ## Histórias de Usuários
