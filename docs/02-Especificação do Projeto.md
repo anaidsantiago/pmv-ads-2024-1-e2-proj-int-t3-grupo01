@@ -12,7 +12,7 @@ Cargo/ Função: Gerente do laboratório
 Escolaridade: Superior
 
 Descrição da sua ocupação: A gerente é responsável pela supervisão geral das operações do laboratório de montagem de óculos. Toma decisões estratégicas relacionadas à produção, recursos humanos, finanças e estratégias de negócios.
-Monitora o desempenho operacional e financeiro do laboratório. Define metas e objetivos de produção, qualidade e eficiência. Utiliza o aplicativo para acessar dados e relatórios de desempenho, realizar análises e tomar decisões estratégicas para otimizar os processos de produção.
+Monitora o desempenho operacional e financeiro do laboratório. Define metas e objetivos de produção, qualidade e eficiência. Utiliza o aplicativo para acessar dados e relatórios de desempenho, aprovar os pedidos feitos pela óticas, realizar análises e tomar decisões estratégicas para otimizar os processos de produção.
 
 ### Marcela Lima
 Idade: 2 anos
@@ -44,15 +44,25 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Antônia Tamires Silva de Carvalho    | Cadastrar nota fiscal e encaminha para ótica referente ao pedido     | Deixar ciente sobre o valor do pedido solicitado|
-|Antônia Tamires Silva de Carvalho     | Ter acesso a todos os pedidos encaminhados ao setor de montagem               | Analisar o andamento e a restrição de cada pedido |
-|Antônia Tamires Silva de Carvalho     | Ter acesso ao estoque e a solicitação de compra enviada pelo setor de montagem              | Repor estoque e aprovar ordem de compra ao fornecedor |
-|Wanderson Rodrigo Pinheiro     | Receber os pedidos enviados pelas óticas (clientes)             | Cadastrar serviço e dar início a montagem |
-|Samilly Sousa de Lima    | Enviar ordem de serviço para Antônia Tamires Silva de Carvalho aprovar serviço de terceirização das lentes   | Encaminhar aos laboratórios a terceirização do serviço |
-|Ótica (cliente)     | Acessar os pedidos em andamentos             | Receber o serviço de montagem|
-|Ótica (cliente)     | Cadastrar pedido         | Cadastrar serviço e dar início a montagem |
-|Opti Prime     | Cadastrar notas fiscais de entrada e verificar histórico de pedidos             | Gerar relatórios financeiro e atualizar estoque |
-
+|Ótica (cliente)     |Cadastrar pedidos              | Sinalizar meu desejo de adquirir o(s) produto(s)m|
+|Ótica (cliente)     | Editar pedidos        | Corrigir dados errados |
+|Ótica (cliente)     | Acompanhar pedidos        | Saber o status de produção do pedido |
+|Antônia Tamires Silva de Carvalho    | Aprovar pedidos    |Verificar se o pedido repassado está de acordo com as diretrizes da empresa e verificar o estoque|
+|Antônia Tamires Silva de Carvalho     |   Cadastrar usuários  | Para garantir que todas as pessoas envolvidas no processo consigam realizar suas tarefas no sistemao |
+|Antônia Tamires Silva de Carvalho     | Excluir usuários              | Para garantir o controle de acessos |
+|Antônia Tamires Silva de Carvalho     | Cancelar Pedido            | Para manter em produção apenas o que tem execução viável|
+|Antônia Tamires Silva de Carvalho     | Acompanhamento dos pedidos  | Para visualizar em que fase se encontra os pedidos em andamento|
+|Antônia Tamires Silva de Carvalho     | Acompanhamento de estoque  |  Para visualizar o controle de matéria prima disponível|
+|Antônia Tamires Silva de Carvalho     | Gerar relatório  |  Realização de análises e produtividade da empresa|
+|Marcela Lima   | Faz o pedido de materia |  Faz o pedido ao fornecedor
+dos produtos utilizados pelos montadores |
+|Marcela Lima    | Cadastrar produtos  | Registrar os produtos ofertados e seus respectivos materiais |
+|Marcela Lima    | Envia nota fiscal | Envia a nota fiscal para o cliente (ótica) |
+|Wanderson Rodrigo Pinheiro     | Sinalizar início da montagem    | Cadastrar serviço e dar início a montagem |
+|Wanderson Rodrigo Pinheiro     | Receber os pedidos enviados pelas óticas (clientes) | Para gerenciar as atividades diárias
+|
+|Wanderson Rodrigo Pinheiro     | Sinalizar conclusão da montagem    | Indicar que a produção terminou e dar baixa no estoque
+|
 
 ## Requisitos
 
@@ -60,10 +70,19 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 ### Requisitos Funcionais
 
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA | 
-|RF-002| A aplicação deve emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+|RF-001| A aplicação deve ser capaz de realizar o cadastro e atualização de usuários | ALTA | 
+|RF-002| A aplicação deve permitir que o usuário cadastre e atualize pedidos  | ALTA  |
+|RF-003|A aplicação deve permitir que o usuário realize o cadastro e atualização do estoque de materiais | ALTA  |
+|RF-004| A aplicação deve permitir que o usuário exporte relatório a partir de filtros pré-definidos  | ALTA  |
+|RF-005| A aplicação deve permitir que o usuário visualize um pedido em andamento ou finalizado  | ALTA  |
+|RF-006| A aplicação deve permitir armazenamento de notas fiscais  | MÉDIA |
+|RF-007| A aplicação deve permitir que o usuário realize login  | ALTA  |
+
+
 
 ### Requisitos não Funcionais
 
@@ -90,5 +109,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
