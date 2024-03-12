@@ -6,8 +6,7 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+O projeto consiste no desenvolvimento de uma aplicação de Tecnologia da Informação (TI) voltada para a gestão e controle da produção em laboratórios de montagem de óculos. Essa aplicação interativa visa otimizar os processos operacionais, melhorar a eficiência da produção e garantir a qualidade dos produtos finais. Permitirá o gerenciamento integrado de pedidos, controle de estoque, programação de produção, rastreamento de pedidos em tempo real, gestão de qualidade e comunicação entre os diversos departamentos envolvidos.
 ## Integrantes
 
 * Diego Rafael Santos Silva
