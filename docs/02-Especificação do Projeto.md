@@ -60,9 +60,7 @@ dos produtos utilizados pelos montadores |
 |Marcela Lima    | Envia nota fiscal | Envia a nota fiscal para o cliente (ótica) |
 |Wanderson Rodrigo Pinheiro     | Sinalizar início da montagem    | Cadastrar serviço e dar início a montagem |
 |Wanderson Rodrigo Pinheiro     | Receber os pedidos enviados pelas óticas (clientes) | Para gerenciar as atividades diárias
-|
-|Wanderson Rodrigo Pinheiro     | Sinalizar conclusão da montagem    | Indicar que a produção terminou e dar baixa no estoque
-|
+|Wanderson Rodrigo Pinheiro     | Sinalizar conclusão da montagem    | Indicar que a produção terminou e dar baixa no estoque|
 
 ## Requisitos
 
