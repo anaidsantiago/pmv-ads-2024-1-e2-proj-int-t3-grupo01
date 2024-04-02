@@ -29,7 +29,8 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 > A equipe está organizada da seguinte maneira:
 > - Scrum Master: 
->   - Product Owner: Erika Negreiros
+> - Product Owner:
+>   - Erika Negreiros
 > - Equipe de Desenvolvimento
 >   - Naiana Mendonça
 >   - Diana
