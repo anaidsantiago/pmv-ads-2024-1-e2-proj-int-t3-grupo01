@@ -6,24 +6,71 @@
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+|	Requisito Associado 	| RF-01 - Aplicação deve ser capaz de realizar o cadastro e atualização de usuários. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site 
 <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
+|Requisito Associado | RF-02	- A aplicação deve permitir que o usuário realize login. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site 
 <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|  	|  	|
+| Caso de Teste 	| CT-03 – Efetuar cadastro de pedido	|
+|Requisito Associado | RF-03	- A aplicação deve permitir que o usuário cadastre os pedidos |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar o cadastro de novos pedidos. |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Pedidos" 
+<br> - Clicar no botão "Cadastrar" <br> - Preencher as informações necessároas <br> - Clicar em "Enviar" |
+|Critério de Êxito | - O cadastro do pedido foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-04 – Efetuar edição de pedido	|
+|Requisito Associado | RF-02	- A aplicação deve permitir que o usuário atualize pedidos |
+| Objetivo do Teste 	| Verificar se o usuário consegue atualizar os pedidos. |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Pedidos" 
+<br> - Clicar no botão "Atualizar" <br> - Preencher as informações necessárias <br> - Clicar em "Enviar" |
+|Critério de Êxito | - A atualização do pedido foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-05 – Efetuar edição de pedido	|
+|Requisito Associado | RF-03	-A aplicação deve permitir que o usuário realize o cadastro de materiais |
+| Objetivo do Teste 	| Verificar se o usuário consegue atualizar os pedidos. |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Pedidos" 
+<br> - Clicar no botão "Alterar" <br> - Preencher as informações necessárias <br> - Clicar em "Enviar" |
+|Critério de Êxito | - A atualização do pedido foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-06 – Efetuar cadastro de materiais	|
+|Requisito Associado | RF-03	-A aplicação deve permitir que o usuário realize o cadastro de materiais |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar os materiais |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Estoque" 
+<br> - Clicar no botão "Adicionar" <br> - Preencher as informações necessárias <br> - Clicar em "Enviar" |
+|Critério de Êxito | - O cadastro de novos produtos foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-07 – Efetuar atualização de materiais	|
+|Requisito Associado | RF-03	-A aplicação deve permitir que o usuário realize o atualização do estoque de materiais |
+| Objetivo do Teste 	| Verificar se o usuário consegue atualizar o estoque de materiais |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Estoque" 
+<br> - Clicar no botão "Alterar" <br> - Preencher as informações necessárias <br> - Clicar em "Enviar" |
+|Critério de Êxito | - A atualização do estoque de materiais foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-08 – Emitir relatórios	|
+|Requisito Associado | RF-04	-A aplicação deve permitir que o usuário exporte relatório a partir de filtros pré-definidos |
+| Objetivo do Teste 	| Verificar se o usuário consegue emitir relatórios |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Relatórios" 
+<br> - Clicar no botão "Enitir" <br> - Preencher as informações necessárias <br> - Clicar em "OK" |
+|Critério de Êxito | - A emissão de relatórios foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-09 – Verificar os status dos pedidos	|
+|Requisito Associado | RF-05	-A aplicação deve permitir que o usuário visualize um pedido em andamento ou finalizado|
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar os status dos pedidos |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Pedidos" 
+<br> - Clicar no pedido específico que deseja visualizar <br> -Irá aparecer todas as informações relevantes do pedidos e status|
+|Critério de Êxito | - A visualização dos pedidos foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-10 – Armazenar notas fiscais	|
+|Requisito Associado | RF-06	- A aplicação deve permitir armazenamento de notas fiscais|
+| Objetivo do Teste 	| Verificar se o usuário consegue armazenar notas fiscais |
+| Passos 	| - Na página inicial ir no menu - Clicar em "Notas fiscais" 
+<br> - Clicar no botão "Salvar" <br> - Anexe o documento e as informações necessárias <br> - Clicar em "OK" |
+|Critério de Êxito | - O armazento das notas foi realizado com sucesso. |
