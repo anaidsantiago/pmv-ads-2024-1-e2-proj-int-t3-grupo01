@@ -19,8 +19,9 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature. Uma explicação rápida sobre este processo é apresentada no vídeo "The gitflow workflow - in less than 5 mins".
 
-![Exemplo de Diagrama de Fluxo](img/gitflow.png)
-Figura 1 - Fluxo de controle do código fonte no repositório git
+![Diagrama de Fluxo](img/gitflow.png)
+
+Figura 2 - Fluxo de controle do código fonte no repositório git
 
 
 ## Gerenciamento do projeto
@@ -29,6 +30,7 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 > A equipe está organizada da seguinte maneira:
 > - Scrum Master: 
+>   - João Victor Antunes
 > - Product Owner:
 >   - Erika Negreiros
 > - Equipe de Desenvolvimento
@@ -36,7 +38,6 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 >   - Diana
 >   - Diego Rafael
 >   - João Gabriel
->   - João Victor Antunes
 
 > Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Jira, conforme as seguintes definições:
 Features: representa as entregas que devem ser realizadas
