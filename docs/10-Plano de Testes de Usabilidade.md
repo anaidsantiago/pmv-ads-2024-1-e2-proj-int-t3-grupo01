@@ -2,13 +2,13 @@
 
 <b>Objetivo:</b> Este teste tem como objetivo avaliar a facilidade de uso e a eficácia da aplicação de controle de produção de um laboratório de óculos, em conformidade com os requisitos funcionais levantados e implementados.
 
-<b>Detalhamento dos Objetivos:<b>
+<b>Detalhamento dos Objetivos:</b>
 
 Garantir que a aplicação permita aos usuários realizar as tarefas de cadastro e atualização de usuários, pedidos e estoque de forma eficiente.
 Verificar a facilidade de exportação de relatórios e armazenamento de notas fiscais.
 Avaliar a interface do usuário para garantir uma experiência intuitiva e satisfatória.
 
-<b>Critérios de Seleção dos Participantes:<b>
+<b>Critérios de Seleção dos Participantes:</b>
 
 Os participantes serão selecionados com base nos seguintes critérios:
 Usuários potenciais da aplicação, como funcionários do laboratório de óculos ou pessoas familiarizadas com o processo de produção de óculos.
