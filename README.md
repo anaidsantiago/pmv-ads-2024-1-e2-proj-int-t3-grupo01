@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# GESTLAB
 
 `CURSO`
 
@@ -18,7 +18,7 @@ O projeto consiste no desenvolvimento de uma aplicação de Tecnologia da Inform
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
