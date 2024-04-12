@@ -91,7 +91,7 @@ Questionário de pré-teste para coletar informações demográficas dos partici
 
 <b>Métricas Coletadas:</b>
 
-Taxa de conclusão das tarefas.
-Taxa de sucesso na realização das tarefas.
-Tempo médio para conclusão de cada tarefa.
-Número médio de erros por tarefa.
+- Taxa de conclusão das tarefas.
+- Taxa de sucesso na realização das tarefas.
+- Tempo médio para conclusão de cada tarefa.
+- Número médio de erros por tarefa.
