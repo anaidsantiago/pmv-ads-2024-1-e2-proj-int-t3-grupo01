@@ -37,7 +37,7 @@ Cadastre um novo pedido.
 Atualize os dados de um pedido existente.
 Cadastro de Estoque:
 
-<b>Acesse a área de cadastro de estoque de materiais.<b/>
+<b>Acesse a área de cadastro de estoque de materiais.</b>
 Adicione um novo item ao estoque.
 Atualize a quantidade de um item existente no estoque.
 Visualização de Pedidos:
