@@ -57,13 +57,13 @@ Verifique se o relatório foi exportado corretamente.
 
 <b>Perguntas de Avaliação:</b>
 
-Em uma escala de 1 a 5, quão fácil foi acessar a aplicação e fazer login na sua conta?
-Como você classificaria a experiência de cadastro e atualização de usuários?
-O que achou da usabilidade do cadastro e atualização de pedidos?
-Descreva sua experiência geral com o cadastro e atualização do estoque de materiais.
-Como foi sua experiência ao visualizar um pedido em andamento ou finalizado?
-Qual foi sua impressão sobre o processo de armazenamento de notas fiscais?
-O processo de exportação de relatórios foi intuitivo? Houve algum filtro pré-definido que você achou útil?
+- Em uma escala de 1 a 5, quão fácil foi acessar a aplicação e fazer login na sua conta?
+- Como você classificaria a experiência de cadastro e atualização de usuários?
+- O que achou da usabilidade do cadastro e atualização de pedidos?
+- Descreva sua experiência geral com o cadastro e atualização do estoque de materiais.
+- Como foi sua experiência ao visualizar um pedido em andamento ou finalizado?
+- Qual foi sua impressão sobre o processo de armazenamento de notas fiscais?
+- O processo de exportação de relatórios foi intuitivo? Houve algum filtro pré-definido que você achou útil?
 
 
 <b>Dados a serem Coletados:</b>
