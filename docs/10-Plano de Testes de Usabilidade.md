@@ -4,15 +4,15 @@
 
 <b>Detalhamento dos Objetivos:</b>
 
-Garantir que a aplicação permita aos usuários realizar as tarefas de cadastro e atualização de usuários, pedidos e estoque de forma eficiente.
-Verificar a facilidade de exportação de relatórios e armazenamento de notas fiscais.
+- Garantir que a aplicação permita aos usuários realizar as tarefas de cadastro e atualização de usuários, pedidos e estoque de forma eficiente.
+- Verificar a facilidade de exportação de relatórios e armazenamento de notas fiscais.
 Avaliar a interface do usuário para garantir uma experiência intuitiva e satisfatória.
 
 <b>Critérios de Seleção dos Participantes:</b>
 
 Os participantes serão selecionados com base nos seguintes critérios:
-Usuários potenciais da aplicação, como funcionários do laboratório de óculos ou pessoas familiarizadas com o processo de produção de óculos.
-Diversidade de idade, gênero e nível de experiência em tecnologia para garantir uma amostra representativa.
+- Usuários potenciais da aplicação, como funcionários do laboratório de óculos ou pessoas familiarizadas com o processo de produção de óculos.
+- Diversidade de idade, gênero e nível de experiência em tecnologia para garantir uma amostra representativa.
 
 <b>Procedimentos:</b>
 
@@ -68,26 +68,26 @@ O processo de exportação de relatórios foi intuitivo? Houve algum filtro pré
 
 <b>Dados a serem Coletados:</b>
 
-Tempo necessário para concluir cada tarefa.
-Número de cliques e interações para completar as tarefas.
-Número de erros cometidos pelos participantes.
-Feedback qualitativo sobre a experiência geral de uso da aplicação.
+- Tempo necessário para concluir cada tarefa.
+- Número de cliques e interações para completar as tarefas.
+- Número de erros cometidos pelos participantes.
+- Feedback qualitativo sobre a experiência geral de uso da aplicação.
 
 <b>Ordem de Execução das Tarefas e Etapas da Sessão de Teste:</b>
 
-Introdução e obtenção de consentimento informado.
-Explicação das tarefas e instruções para os participantes.
-Execução das tarefas, uma de cada vez, na ordem especificada.
-Coleta de dados durante a execução das tarefas.
-Entrevista pós-teste para coletar feedback adicional e opiniões dos participantes.
-Encerramento da sessão e agradecimento aos participantes.
+- Introdução e obtenção de consentimento informado.
+- Explicação das tarefas e instruções para os participantes.
+- Execução das tarefas, uma de cada vez, na ordem especificada.
+- Coleta de dados durante a execução das tarefas.
+- Entrevista pós-teste para coletar feedback adicional e opiniões dos participantes.
+- Encerramento da sessão e agradecimento aos participantes.
 
 <b>Recursos Demandados:</b>
 
-Computadores ou dispositivos móveis com acesso à internet para acesso à aplicação.
-Espaço tranquilo para condução dos testes.
-Ferramentas de gravação de tela e áudio (para testes remotos, se aplicável).
-Questionário de pré-teste para coletar informações demográficas dos participantes.
+- Computadores ou dispositivos móveis com acesso à internet para acesso à aplicação.
+- Espaço tranquilo para condução dos testes.
+- Ferramentas de gravação de tela e áudio (para testes remotos, se aplicável).
+- Questionário de pré-teste para coletar informações demográficas dos participantes.
 
 <b>Métricas Coletadas:</b>
 
