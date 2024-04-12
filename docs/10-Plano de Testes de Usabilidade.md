@@ -25,31 +25,31 @@ Os facilitadores do teste irão fornecer instruções claras e estarão disponí
 <b>Login:</b>
 Acesse a aplicação.
 Faça login na sua conta utilizando as credenciais fornecidas.
-Cadastro de Usuário:
+Cadastro de Usuário.
 
 <b>Acesse a área de cadastro de usuários.</b>
 Cadastre um novo usuário.
 Atualize os dados de um usuário existente.
-Cadastro de Pedido:
+Cadastro de Pedido.
 
 <b>Acesse a área de cadastro de pedidos.</b>
 Cadastre um novo pedido.
 Atualize os dados de um pedido existente.
-Cadastro de Estoque:
+Cadastro de Estoque.
 
 <b>Acesse a área de cadastro de estoque de materiais.</b>
 Adicione um novo item ao estoque.
 Atualize a quantidade de um item existente no estoque.
-Visualização de Pedidos:
+Visualização de Pedidos.
 
 <b>Acesse a área de visualização de pedidos.</b>
 Selecione um pedido em andamento ou finalizado para visualização.
-Armazenamento de Notas Fiscais:
+Armazenamento de Notas Fiscais.
 
 <b>Acesse a área de armazenamento de notas fiscais.</b>
 Faça o upload de uma nota fiscal.
 Verifique se a nota fiscal foi armazenada corretamente.
-Exportação de Relatório:
+Exportação de Relatório.
 
 <b>Acesse a área de exportação de relatórios.</b>
 Aplique filtros pré-definidos para gerar um relatório.
