@@ -17,9 +17,16 @@ Fluxo de Produção de pedidos
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+A estrutura padrão presente nas telas é descrita em detalhes a seguir:
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Tela - HomePage/login
+
+A tela HomePage/login será a tela inicial do usuário ao acessar a página. Nesta tela haverá o logo do projeto. É nesta tela que o usuário fará o login para acessar sua conta, ou então, redefinir sua senha.
+
+
+<img width="268" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/625ded80-0593-42a8-9800-4405f3e30755">
+
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
