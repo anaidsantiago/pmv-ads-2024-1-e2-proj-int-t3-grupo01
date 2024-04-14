@@ -48,3 +48,6 @@ Histórias: representa os itens ou tópicos que devem ser atendidos a cada entre
 > - **Doing**: recebe as histórias que já tiveram seu desenvolvimento iniciado
 > - **Check**: receber as histórias finalizadas e que estão sendo validadas/testadas
 > - **Done**: recebe as histórias finalizadas e testas que já foram entregues
+> ###Boad do jira
+> <img width="953" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/ca9967c9-745b-4854-95d6-5b8ad65a99c4">
+
