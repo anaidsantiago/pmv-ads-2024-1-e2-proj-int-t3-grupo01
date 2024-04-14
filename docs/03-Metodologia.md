@@ -53,7 +53,7 @@ Histórias: representa os itens ou tópicos que devem ser atendidos a cada entre
 > - Visão linha do tempo  
 > <img width="953" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/ca9967c9-745b-4854-95d6-5b8ad65a99c4">
 
-> - Visão linha do KANBAN
+> - Visão KANBAN
 > - <img width="707" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/de8a1988-c0b9-4a0b-a1f5-7327e1f9568b">
 
 
