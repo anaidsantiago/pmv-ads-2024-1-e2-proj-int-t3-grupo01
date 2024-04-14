@@ -12,7 +12,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |------------------|------------|----------------|
 |Repositório de código fonte| GitHub |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01 |
 |Documentos do projeto| Google Drive |https://docs.google.com/document/d/1lbAMOrUWa3ZGu5U9wK3zqG4raUNoXeMI/edit |
-|Projeto de Interface e  Wireframes|  |https://www.figma.com/file/fzPUTmepCM94hTJyvac5ri/Untitled?type=design&node-id=1-242&mode=design&t=AGe56ZsHJrcQGBGy-0|
+|Projeto de Interface e  Wireframes| Figma |https://www.figma.com/file/fzPUTmepCM94hTJyvac5ri/Untitled?type=design&node-id=1-242&mode=design&t=AGe56ZsHJrcQGBGy-0|
 |Gerenciamento do Projeto| Jira |https://grupo1exio2pucminas.atlassian.net/jira/software/projects/KAN/boards/1/backlog |
 
 ## Gestão de código fonte
