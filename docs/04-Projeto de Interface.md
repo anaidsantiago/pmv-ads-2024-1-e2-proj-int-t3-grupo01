@@ -33,7 +33,7 @@ Nessa tela é possível selecionar as telas de produto, pedidos, relatórios e u
 
 ### Telas - Cadastro de produtos, pedidos e usuários
 
-Nessa tela é possível cadastrar novos produtos
+Nessa tela é possível cadastrar e atualizar novos produtos
 
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/dd9c3723-28a4-4ee4-83a4-704dae0e8fe9">
 
@@ -43,15 +43,14 @@ Nessa tela é possível cadastrar novos produtos
 
 ### Tela de detalhes de pedidos
 
-<img width="282" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/69e0eba1-57f7-4f96-9007-d3c5884d8e84">
+Nessa tela é possível pesquisar por pedidos e fazer alterações do status do pedido.
+
+<img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/69e0eba1-57f7-4f96-9007-d3c5884d8e84">
+
+### Tela de relatórios
+
+<img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/862e791f-a65f-4ae7-8647-b338bbcb5ac0">
 
 
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+
