@@ -39,6 +39,7 @@ Nessa tela é possível cadastrar e atualizar novos produtos
 
 ### Telas de gestão de produtos, pedidos e usuários
 
+Nessa tela é possível atualizar ou excluir pedidos, produtos ou usuários.
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/6bb6b35f-cb5f-410c-b9bb-f81d5b4b84b9">
 
 ### Tela de detalhes de pedidos
@@ -48,6 +49,8 @@ Nessa tela é possível pesquisar por pedidos e fazer alterações do status do 
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/69e0eba1-57f7-4f96-9007-d3c5884d8e84">
 
 ### Tela de relatórios
+
+Nessa tela é possível fazer o download dos relatórios de estoque na visão diária, semanal ou mensal. 
 
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/862e791f-a65f-4ae7-8647-b338bbcb5ac0">
 
