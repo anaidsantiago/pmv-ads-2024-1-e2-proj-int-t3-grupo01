@@ -19,7 +19,7 @@ Fluxo de Produção de pedidos
 
 A estrutura padrão presente nas telas é descrita em detalhes a seguir:
 
-## Tela - HomePage/login
+### Tela - HomePage/login
 
 A tela HomePage/login será a tela inicial do usuário ao acessar a página. Nesta tela haverá o logo do projeto. É nesta tela que o usuário fará o login para acessar sua conta, ou então, redefinir sua senha.
 
@@ -31,11 +31,20 @@ Nessa tela é possível selecionar as telas de produto, pedidos, relatórios e u
 
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/b2d05dbf-9fc4-4418-b67a-1de37cea73c7">
 
-### Telas - Cadastro de produtos, pedidos e usuários.
+### Telas - Cadastro de produtos, pedidos e usuários
 
 Nessa tela é possível cadastrar novos produtos
 
 <img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/dd9c3723-28a4-4ee4-83a4-704dae0e8fe9">
+
+### Telas de gestão de produtos, pedidos e usuários
+
+<img width="419" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/6bb6b35f-cb5f-410c-b9bb-f81d5b4b84b9">
+
+### Tela de detalhes de pedidos
+
+<img width="282" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/114538688/69e0eba1-57f7-4f96-9007-d3c5884d8e84">
+
 
  
 > **Links Úteis**:
