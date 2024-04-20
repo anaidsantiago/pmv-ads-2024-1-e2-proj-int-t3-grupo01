@@ -96,6 +96,8 @@ ClientBin/
 *~
 *.dbmdl
 *.[Pp]ublish.xml
+bin/
+obj/
 
 *.publishsettings
 
