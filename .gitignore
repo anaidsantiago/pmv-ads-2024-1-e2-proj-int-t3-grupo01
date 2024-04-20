@@ -153,3 +153,4 @@ _NCrunch*
 migrate_working_dir/
 /.vs
 /src/GestLab/.vs/GestLab/v17/.suo
+.vs/
