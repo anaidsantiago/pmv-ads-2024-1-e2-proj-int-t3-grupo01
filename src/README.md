@@ -1,8 +1,15 @@
 # Instruções de utilização
 
+Base para configuração do entity
+https://www.youtube.com/watch?v=SryQxUeChMc&list=PLdo4fOcmZ0oX7uTkjYwvCJDG2qhcSzwZ6
+
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+Alterações de banco:
+1. Realizar as alterações necessarias no model do projeto
+2. Acessar Tools -> NuGet Package Manager - Package Manager Console
+3. Add-Migration NomeMigration
+4. Update-Database
 
 ## Histórico de versões
 
