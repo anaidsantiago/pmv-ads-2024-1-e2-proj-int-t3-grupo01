@@ -19,7 +19,19 @@ namespace GestLab.Controllers
         public IActionResult Index()
         {
             var usuario = _context.Usuarios.ToList();
-            return View(usuario);
+            return View("Index",usuario);
+        }
+
+        [HttpPost]
+        public IActionResult Detail(UsuarioModel usuario)
+        {
+            if(usuario.Id ==0)
+                _context.Usuarios.Add(usuario);
+            else
+                _context.Usuarios.Update(usuario);
+            
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Detail(int? id)
