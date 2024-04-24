@@ -1,0 +1,33 @@
+﻿﻿@{
+    ViewBag.Title = "Usuarios";
+}
+
+@model UsuarioModel
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+
+    <div class="table-responsive">
+
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Tipo</th>
+                    <th>Telefone</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>@Model.Nome</td>
+                        <td>@Model.Email</td>
+                        <td>@Model.Tipo</td>
+                        <td>@Model.Telefone</td>
+                        <td>@Html.ActionLink("Editar", "Detail", new { id = Model.Id })</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
