@@ -6,7 +6,9 @@ https://www.youtube.com/watch?v=SryQxUeChMc&list=PLdo4fOcmZ0oX7uTkjYwvCJDG2qhcSz
 ## Instalação do Site
 
 Inicio:
-Alterar o arquivo 'Data/GestLabContext.cs' e configurar a connection string caso necessario
+1. Alterar o arquivo 'Data/GestLabContext.cs' e configurar a connection string caso necessario
+2. Acessar Tools -> NuGet Package Manager - Package Manager Console
+3. Update-Database
 
 Criar nova tela:
 Criar Pasta com o nome da entidade trabalhada dentro de View, e um novo Index.cshtml
