@@ -51,21 +51,6 @@ namespace GestLab.Controllers
             return View("Detail", usuario);
         }
 
-        public void AddUsuario()
-        {
-            UsuarioModel user = new()
-            {
-                Nome = "Test",
-                Senha = "Test",
-                Email = "Test",
-                Telefone = "Test",
-                Tipo = "Test",
-            };
-
-            _context.Usuarios.Add(user);
-            _context.SaveChanges();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
