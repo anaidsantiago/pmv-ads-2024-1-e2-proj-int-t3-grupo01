@@ -7,6 +7,8 @@
         public ReceitaModel Receita { get; set; }
         public DateTime DataPedido { get; set; }
         public decimal ValorPedido { get; set; }
-        public ProdutoModel? LenteEsquerdaId { get; set; }
+        public ProdutoModel? LenteEsquerda { get; set; }
+        public ProdutoModel? LenteDireita { get; set; }
+        public ProdutoModel? Armacao { get; set; }
     }
 }

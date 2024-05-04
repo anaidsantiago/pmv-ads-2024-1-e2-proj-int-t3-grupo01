@@ -4,6 +4,7 @@ using GestLab.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestLab.Migrations
 {
     [DbContext(typeof(GestLabContext))]
-    partial class GestLabContextModelSnapshot : ModelSnapshot
+    [Migration("20240504181958_AddLenteDireitaPedido")]
+    partial class AddLenteDireitaPedido
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,9 +78,6 @@ namespace GestLab.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ArmacaoId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
@@ -97,8 +97,6 @@ namespace GestLab.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ArmacaoId");
 
                     b.HasIndex("ClienteId");
 
@@ -194,10 +192,6 @@ namespace GestLab.Migrations
 
             modelBuilder.Entity("GestLab.Models.PedidoModel", b =>
                 {
-                    b.HasOne("GestLab.Models.ProdutoModel", "Armacao")
-                        .WithMany()
-                        .HasForeignKey("ArmacaoId");
-
                     b.HasOne("GestLab.Models.ClienteModel", "Cliente")
                         .WithMany()
                         .HasForeignKey("ClienteId")
@@ -217,8 +211,6 @@ namespace GestLab.Migrations
                         .HasForeignKey("ReceitaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Armacao");
 
                     b.Navigation("Cliente");
 
