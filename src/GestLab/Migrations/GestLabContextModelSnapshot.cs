@@ -150,7 +150,10 @@ namespace GestLab.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("DateEntregueCliente")
+                    b.Property<DateTime>("DataEntrada")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataSaida")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")

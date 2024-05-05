@@ -26,7 +26,9 @@ namespace GestLab.Controllers
                 {
                     Tipo = g.Key.Tipo,
                     Cor = g.Key.Cor,
-                    QuantidadeTotal = g.Count()
+                    QuantidadeTotal = g.Count(),
+                    QuantidadeDisponivel = g.Count(x => !x.Utilizado),
+                    QuantidadeUtilizada = g.Count(x => x.Utilizado)
                 }
             );
 
@@ -51,7 +53,8 @@ namespace GestLab.Controllers
                 {
                     Cor = produtoView.Cor,
                     Descricao = produtoView.Descricao,
-                    Tipo = produtoView.Tipo
+                    Tipo = produtoView.Tipo,
+                    DataEntrada = DateTime.Now
                 });
             }
 

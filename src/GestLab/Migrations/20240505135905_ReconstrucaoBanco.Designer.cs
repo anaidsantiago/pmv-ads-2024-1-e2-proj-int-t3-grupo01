@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestLab.Migrations
 {
     [DbContext(typeof(GestLabContext))]
-    [Migration("20240504181744_ClientePedidoProduto")]
-    partial class ClientePedidoProduto
+    [Migration("20240505135905_ReconstrucaoBanco")]
+    partial class ReconstrucaoBanco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,21 +78,63 @@ namespace GestLab.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("ArmacaoEntreguePeloCliente")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ArmacaoId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
+
+                    b.Property<string>("CorLentes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataPedido")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IdentificacaoArmacao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LenteDireitaId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LenteEsquerdaId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MontadorResponsavelId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("PossuiLentesEmEstoque")
+                        .HasColumnType("bit");
+
                     b.Property<int>("ReceitaId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("ValorPedido")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ArmacaoId");
+
                     b.HasIndex("ClienteId");
+
+                    b.HasIndex("LenteDireitaId");
+
+                    b.HasIndex("LenteEsquerdaId");
+
+                    b.HasIndex("MontadorResponsavelId");
 
                     b.HasIndex("ReceitaId");
 
@@ -111,6 +153,12 @@ namespace GestLab.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DataEntrada")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataSaida")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -118,6 +166,9 @@ namespace GestLab.Migrations
                     b.Property<string>("Tipo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Utilizado")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -182,11 +233,27 @@ namespace GestLab.Migrations
 
             modelBuilder.Entity("GestLab.Models.PedidoModel", b =>
                 {
+                    b.HasOne("GestLab.Models.ProdutoModel", "Armacao")
+                        .WithMany()
+                        .HasForeignKey("ArmacaoId");
+
                     b.HasOne("GestLab.Models.ClienteModel", "Cliente")
                         .WithMany()
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("GestLab.Models.ProdutoModel", "LenteDireita")
+                        .WithMany()
+                        .HasForeignKey("LenteDireitaId");
+
+                    b.HasOne("GestLab.Models.ProdutoModel", "LenteEsquerda")
+                        .WithMany()
+                        .HasForeignKey("LenteEsquerdaId");
+
+                    b.HasOne("GestLab.Models.UsuarioModel", "MontadorResponsavel")
+                        .WithMany()
+                        .HasForeignKey("MontadorResponsavelId");
 
                     b.HasOne("GestLab.Models.ReceitaModel", "Receita")
                         .WithMany()
@@ -194,7 +261,15 @@ namespace GestLab.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Armacao");
+
                     b.Navigation("Cliente");
+
+                    b.Navigation("LenteDireita");
+
+                    b.Navigation("LenteEsquerda");
+
+                    b.Navigation("MontadorResponsavel");
 
                     b.Navigation("Receita");
                 });

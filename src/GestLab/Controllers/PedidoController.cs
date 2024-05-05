@@ -30,7 +30,9 @@ namespace GestLab.Controllers
         [HttpPost]
         public IActionResult Detail(PedidoViewModel pedidoView)
         {
-            var pedido = pedidoView.Pedido;
+            var pedido = RecuperaPedido(pedidoView.Pedido.Id);
+            pedido.Aplicar(pedidoView.Pedido);
+
             //gambi provisoria para cliente, campo deve virar um combo com os clientes disponiveis
             var cliente = _context.Cliente.FirstOrDefault(x => x.Id == pedido.Cliente.Id);
             if (cliente == null)
@@ -41,15 +43,16 @@ namespace GestLab.Controllers
             else
                 pedido.Cliente = cliente;
 
-            var possuiArmacao = false;
-            if (pedido.ArmacaoEntreguePeloCliente)
+            var possuiArmacao = pedido.ArmacaoEntreguePeloCliente;
+            if (pedido.ArmacaoEntreguePeloCliente && (pedido.Armacao == null || pedido.Armacao.Id == 0))
             {
                 possuiArmacao = true;
                 var armacao = new ProdutoModel();
-                armacao.DateEntregueCliente = DateTime.Now;
+                armacao.DataSaida = armacao.DataEntrada = DateTime.Now;
                 armacao.Descricao = pedido.IdentificacaoArmacao;
                 armacao.Tipo = "Armação";
-                armacao.Cor = "";
+                armacao.Cor = "-";
+                armacao.Utilizado = true;
                 pedido.Armacao = armacao;
             }
 
@@ -59,22 +62,24 @@ namespace GestLab.Controllers
                 if (lentes?.Count() == 2)
                 {
                     pedido.PossuiLentesEmEstoque = true;
-                    lentes.First().Utilizado = true;
-                    lentes.Last().Utilizado = true;
                     pedido.LenteEsquerda = lentes.First();
                     pedido.LenteDireita = lentes.Last();
+                    pedido.LenteDireita.Utilizado = pedido.LenteEsquerda.Utilizado = true;
+                    pedido.LenteDireita.DataSaida = pedido.LenteEsquerda.DataSaida = DateTime.Now;
                 }
             }
 
+            if (!possuiArmacao && !pedido.PossuiLentesEmEstoque)
+                pedido.Status = "Pendente Lentes e Armação";
+            else if (!possuiArmacao)
+                pedido.Status = "Pendente Armação";
+            else if (!pedido.PossuiLentesEmEstoque)
+                pedido.Status = "Pendente Lentes";
+            else
+                pedido.Status = "Novo";
+
             if (pedido.Id == 0)
             {
-                if (!possuiArmacao && !pedido.PossuiLentesEmEstoque)
-                    pedido.Status = "Pendente Lentes e Armação";
-                else if (!possuiArmacao)
-                    pedido.Status = "Pendente Armação";
-                else if (!pedido.PossuiLentesEmEstoque)
-                    pedido.Status = "Pendente Lentes";
-
                 pedido.DataPedido = DateTime.Now;
                 _context.Pedido.Add(pedido);
             }
@@ -85,22 +90,9 @@ namespace GestLab.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Detail(int? id)
+        public ActionResult Detail(int id)
         {
-            PedidoModel pedido = null;
-
-            if (id > 0)
-            {
-                pedido = _context.Pedido
-                    .Where(x => x.Id == id)
-                    .Include(x => x.Receita)
-                    .Include(x => x.LenteDireita)
-                    .Include(x => x.LenteEsquerda)
-                    .Include(x => x.Armacao)
-                    .FirstOrDefault();
-            }
-
-            if (id == 0) pedido = new();
+            var pedido = RecuperaPedido(id);
 
             if (pedido == null)
             {
@@ -117,6 +109,26 @@ namespace GestLab.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        private PedidoModel RecuperaPedido(int id)
+        {
+            PedidoModel pedido = null;
+
+            if (id > 0)
+            {
+                pedido = _context.Pedido
+                    .Where(x => x.Id == id)
+                    .Include(x => x.Receita)
+                    .Include(x => x.LenteDireita)
+                    .Include(x => x.LenteEsquerda)
+                    .Include(x => x.Armacao)
+                    .FirstOrDefault();
+            }
+
+            if (id == 0) pedido = new();
+
+            return pedido;
         }
     }
 }
