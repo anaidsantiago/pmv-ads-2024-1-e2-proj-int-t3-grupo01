@@ -2,7 +2,7 @@
     ViewBag.Title = "Estoque";
 }
 
-@model List<EstoqueViewModel>
+@model IEnumerable<EstoqueViewModel>
 
 <h2>@ViewBag.Title</h2>
 <div class="row">
@@ -16,6 +16,7 @@
             <thead>
                 <tr>
                     <th>Tipo</th>
+                    <th>Cor</th>
                     <th>Quantidade Total</th>
                     <th>Quantidade Disponível</th>
                     <th>Quantidade Utilizada</th>
@@ -26,6 +27,7 @@
                 {
                     <tr>
                         <td>@estoque.Tipo</td>
+                        <td>@estoque.Cor</td>
                         <td>@estoque.QuantidadeTotal</td>
                         <td>@estoque.QuantidadeDisponivel</td>
                         <td>@estoque.QuantidadeUtilizada</td>

@@ -1,6 +1,8 @@
 using GestLab.Data;
 using GestLab.Models;
+using GestLab.Shared;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace GestLab.Controllers
@@ -18,16 +20,26 @@ namespace GestLab.Controllers
 
         public IActionResult Index()
         {
-            var produtos = _context.Produto.ToList();
+            var produtos = _context.Produto
+                .GroupBy(c => new { Tipo = c.Tipo, Cor = c.Cor })
+                .Select(g => new EstoqueViewModel()
+                {
+                    Tipo = g.Key.Tipo,
+                    Cor = g.Key.Cor,
+                    QuantidadeTotal = g.Count()
+                }
+            );
 
-            var estoque = produtos.GroupBy(x => x.Tipo).Select(x => new EstoqueViewModel() { Tipo = x.Key, QuantidadeTotal = x.Count() }).ToList();
-
-            return View("Index", estoque);
+            return View("Index", produtos);
         }
 
         public ActionResult Detail()
         {
-            return View("Detail", new ProdutoViewModel());
+            var prod = new ProdutoViewModel();
+            prod.Cores = StaticLists.ObterCores().Select(x => new SelectListItem() { Text = x, Value = x });
+            prod.Tipos = StaticLists.ObterTiposProduto().Select(x => new SelectListItem() { Text = x, Value = x });
+
+            return View("Detail", prod);
         }
 
         [HttpPost]
