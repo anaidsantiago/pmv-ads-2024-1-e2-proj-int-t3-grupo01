@@ -1,6 +1,6 @@
 ﻿namespace GestLab.Models
 {
-    public class EstoqueModel
+    public class EstoqueViewModel
     {
         public string Tipo { get; set; }
         public int QuantidadeTotal { get; set; }

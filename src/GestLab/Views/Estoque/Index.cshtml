@@ -2,12 +2,12 @@
     ViewBag.Title = "Estoque";
 }
 
-@model List<EstoqueModel>
+@model List<EstoqueViewModel>
 
 <h2>@ViewBag.Title</h2>
 <div class="row">
 
-    <a href="@Url.Action("Detail", "Estoque", new { id = 0 })" class="btn btn-primary">
+    <a href="@Url.Action("Detail", "Estoque")" class="btn btn-primary">
         Adicionar
     </a>
 
