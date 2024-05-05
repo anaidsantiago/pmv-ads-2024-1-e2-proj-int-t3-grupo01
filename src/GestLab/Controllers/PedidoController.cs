@@ -1,6 +1,8 @@
 using GestLab.Data;
 using GestLab.Models;
+using GestLab.Shared;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
@@ -20,14 +22,15 @@ namespace GestLab.Controllers
         public IActionResult Index()
         {
             var pedido = _context.Pedido
-                .Include(x=>x.Cliente)
+                .Include(x => x.Cliente)
                 .ToList();
             return View("Index", pedido);
         }
 
         [HttpPost]
-        public IActionResult Detail(PedidoModel pedido)
+        public IActionResult Detail(PedidoViewModel pedidoView)
         {
+            var pedido = pedidoView.Pedido;
             //gambi provisoria para cliente, campo deve virar um combo com os clientes disponiveis
             var cliente = _context.Cliente.FirstOrDefault(x => x.Id == pedido.Cliente.Id);
             if (cliente == null)
@@ -39,7 +42,7 @@ namespace GestLab.Controllers
                 pedido.Cliente = cliente;
 
             var possuiArmacao = false;
-            if (pedido.ArmacaoEntreguePeloCliente && ((pedido.Armacao?.Id ?? 0) == 0))
+            if (pedido.ArmacaoEntreguePeloCliente)
             {
                 possuiArmacao = true;
                 var armacao = new ProdutoModel();
@@ -72,6 +75,7 @@ namespace GestLab.Controllers
                 else if (!pedido.PossuiLentesEmEstoque)
                     pedido.Status = "Pendente Lentes";
 
+                pedido.DataPedido = DateTime.Now;
                 _context.Pedido.Add(pedido);
             }
             else
@@ -83,25 +87,30 @@ namespace GestLab.Controllers
 
         public ActionResult Detail(int? id)
         {
-            if (id == 0)
+            PedidoModel pedido = null;
+
+            if (id > 0)
             {
-                return View("Detail", new PedidoModel());
+                pedido = _context.Pedido
+                    .Where(x => x.Id == id)
+                    .Include(x => x.Receita)
+                    .Include(x => x.LenteDireita)
+                    .Include(x => x.LenteEsquerda)
+                    .Include(x => x.Armacao)
+                    .FirstOrDefault();
             }
 
-            if (id == null)
+            if (id == 0) pedido = new();
+
+            if (pedido == null)
             {
                 return NotFound();
             }
 
-            var pedido = _context.Pedido
-                .Where(x => x.Id == id)
-                .Include(x => x.Receita)
-                .Include(x => x.LenteDireita)
-                .Include(x => x.LenteEsquerda)
-                .Include(x => x.Armacao)
-                .FirstOrDefault();
+            PedidoViewModel pedidoModel = new(pedido);
+            pedidoModel.Cores = StaticLists.ObterCores().Select(x => new SelectListItem() { Text = x, Value = x });
 
-            return View("Detail", pedido);
+            return View("Detail", pedidoModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

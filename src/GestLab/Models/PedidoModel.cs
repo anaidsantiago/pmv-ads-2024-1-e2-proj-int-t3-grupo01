@@ -2,6 +2,18 @@
 {
     public class PedidoModel
     {
+        //public PedidoModel(PedidoViewModel viewModel)
+        //{
+        //    Id = viewModel.Id;
+        //    Descricao = viewModel.Descricao;
+        //    DataPedido = DateTime.Now;
+        //    Receita = new ReceitaModel() { Eixo = viewModel.Eixo, GrauOlhoDireito = viewModel.GrauOlhoDireito, GrauOlhoEsquerdo = viewModel.GrauOlhoEsquerdo };
+        //    CorLentes = viewModel.CorLentes;
+        //    ArmacaoEntreguePeloCliente = viewModel.ArmacaoEntreguePeloCliente;
+        //    IdentificacaoArmacao = viewModel.IdentificacaoArmacao;
+        //    PossuiLentesEmEstoque = viewModel.PossuiLentesEmEstoque;
+        //}
+
         public PedidoModel()
         {
             Cliente = new();
