@@ -1,5 +1,5 @@
 1. Mensagem de falha no login
-2. Salvar usuario autenticado ao logar
+2. Salvar na sessão usuario autenticado ao logar
 3. Exibir menus conforme o tipo de usuario.
 4. Criar cliente ao criar usuario do respectivo tipo
 5. Seleção de cliente no cadastro de pedido
