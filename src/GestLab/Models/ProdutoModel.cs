@@ -5,6 +5,8 @@
         public int Id { get; set; }
         public string Cor { get; set; }
         public string Descricao { get; set; }
+        public DateTime? DateEntregueCliente { get; set; }
+        public bool Utilizado { get; set; }
         public string Tipo { get; set; } //Lente-Armação
     }
 }
