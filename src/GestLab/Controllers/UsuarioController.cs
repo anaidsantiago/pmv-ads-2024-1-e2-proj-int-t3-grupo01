@@ -19,17 +19,17 @@ namespace GestLab.Controllers
         public IActionResult Index()
         {
             var usuario = _context.Usuarios.ToList();
-            return View("Index",usuario);
+            return View("Index", usuario);
         }
 
         [HttpPost]
         public IActionResult Detail(UsuarioModel usuario)
         {
-            if(usuario.Id ==0)
+            if (usuario.Id == 0)
                 _context.Usuarios.Add(usuario);
             else
                 _context.Usuarios.Update(usuario);
-            
+
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -49,6 +49,21 @@ namespace GestLab.Controllers
             var usuario = _context.Usuarios.Find(id);
 
             return View("Detail", usuario);
+        }
+
+        public IActionResult Search(string searchTerm)
+        {
+            var usuarios = _context.Usuarios.ToList();
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                // Convertendo o searchTerm para minúsculas para comparação sem diferenciação entre maiúsculas e minúsculas
+                searchTerm = searchTerm.ToLower();
+
+                usuarios = usuarios.Where(u => u.Nome.ToLower().Contains(searchTerm) || u.Email.ToLower().Contains(searchTerm)).ToList();
+            }
+
+            return View("Index", usuarios);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
