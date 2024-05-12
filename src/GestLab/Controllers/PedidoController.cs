@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace GestLab.Controllers
 {
@@ -129,6 +130,32 @@ namespace GestLab.Controllers
             if (id == 0) pedido = new();
 
             return pedido;
+        }
+        public async Task<IActionResult> Relatorio(int? id, int? mes, int? ano)
+        {
+            if (id == null) 
+                return NotFound();
+
+            var pedido = await _context.Pedido.FindAsync(id);
+
+            if (pedido == null) 
+                return NotFound();
+
+            var Pedido= await _context.Pedido
+                .Include(x => x.Receita)
+                .OrderByDescending(c => c.DataPedido)
+                .ToListAsync();
+
+           
+            var mesAno = $"{mes}/{ano}";
+
+            // Passar os dados para a view
+            ViewBag.Pedido = pedido;
+            ViewBag.MesAno = mesAno;
+           
+
+            return View(pedido);
+
         }
     }
 }

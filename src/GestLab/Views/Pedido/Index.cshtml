@@ -27,6 +27,8 @@
                 @foreach (var pedido in Model)
                 {
                     <tr>
+                        <td>     <a asp-action="Relatorio" asp-route-id="@pedido.Id">@pedido</a> |</td>
+                        
                         <th>@pedido.Descricao</th>
                         <td>@pedido.Cliente?.Nome</td>
                         <td>@pedido.Status</td>
