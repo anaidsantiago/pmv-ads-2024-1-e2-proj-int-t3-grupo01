@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace GestLab.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -16,7 +16,11 @@ namespace GestLab.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var usuario = GetDadosUsuario();
+            if (string.IsNullOrEmpty(usuario.Nome))
+                return RedirectToAction("Index", "Login");
+
+            return View(usuario);
         }
 
         public IActionResult Privacy()
