@@ -13,7 +13,7 @@ namespace GestLab.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=GestLab;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Data Source=SQL8010.site4now.net;Initial Catalog=db_aa9921_gestlab;User Id=db_aa9921_gestlab_admin;Password=Senha@2022");
             base.OnConfiguring(optionsBuilder);
         }
     }
