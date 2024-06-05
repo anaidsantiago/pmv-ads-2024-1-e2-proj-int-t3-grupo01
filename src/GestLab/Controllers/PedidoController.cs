@@ -70,6 +70,14 @@ namespace GestLab.Controllers
                 }
             }
 
+            if (pedido.ValorPedido == 0 && pedido.PossuiLentesEmEstoque)
+            {
+                pedido.ValorPedido += pedido.LenteDireita?.Custo ?? 50;
+                pedido.ValorPedido += pedido.LenteEsquerda?.Custo ?? 50;
+                pedido.ValorPedido += 100;//Custo fixo
+                pedido.ValorPedido *= 1.45m;//Margem lucro
+            }
+
             if (!possuiArmacao && !pedido.PossuiLentesEmEstoque)
                 pedido.Status = "Pendente Lentes e Armação";
             else if (!possuiArmacao)
@@ -133,26 +141,26 @@ namespace GestLab.Controllers
         }
         public async Task<IActionResult> Relatorio(int? id, int? mes, int? ano)
         {
-            if (id == null) 
+            if (id == null)
                 return NotFound();
 
             var pedido = await _context.Pedido.FindAsync(id);
 
-            if (pedido == null) 
+            if (pedido == null)
                 return NotFound();
 
-            var Pedido= await _context.Pedido
+            var Pedido = await _context.Pedido
                 .Include(x => x.Receita)
                 .OrderByDescending(c => c.DataPedido)
                 .ToListAsync();
 
-           
+
             var mesAno = $"{mes}/{ano}";
 
             // Passar os dados para a view
             ViewBag.Pedido = pedido;
             ViewBag.MesAno = mesAno;
-           
+
 
             return View(pedido);
 

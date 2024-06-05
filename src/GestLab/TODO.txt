@@ -1,7 +1,11 @@
 Arquivo de publish: site1.PublishSettings
 Senha para publicação: Senha@2022
 
+Adicionar no hosts: (C:\Windows\System32\drivers\etc)
+208.98.35.140 gestlabpuc.net
 url: http://gestlabpuc.net/ (Parece que tem que alterar o servidor de DNS para funcionar)
+
+OU
 
 url: http://joaoantunes-001-site1.jtempurl.com/
 User Name: 11180321
@@ -9,3 +13,5 @@ Password: 60-dayfreetrial
 
 Usuario do sistema: admin@admin.com
 Senha do sistema: admin
+
+Connection String: "Data Source=SQL8010.site4now.net;Initial Catalog=db_aa9921_gestlab;User Id=db_aa9921_gestlab_admin;Password=Senha@2022"
