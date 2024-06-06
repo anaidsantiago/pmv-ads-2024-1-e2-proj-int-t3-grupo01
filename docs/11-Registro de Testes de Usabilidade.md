@@ -27,7 +27,7 @@ Exportação de Relatório: Gerar relatórios com filtros pré-definidos e verif
 <li>Taxa de Conclusão das Tarefas: Porcentagem de tarefas concluídas com sucesso.
 <li>Número de cliques e interações para completar as tarefas
 <li>Tempo Médio de Conclusão: Tempo médio necessário para concluir cada tarefa.
-<li>>Número de Erros por Tarefa: Quantidade de erros cometidos durante a realização das tarefas.
+<li>Número de Erros por Tarefa: Quantidade de erros cometidos durante a realização das tarefas.
 
 **Resposta dos testes** 
 
@@ -39,11 +39,10 @@ Exportação de Relatório: Gerar relatórios com filtros pré-definidos e verif
 <br><br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/349c5f4d-f2d4-43cf-9d8f-36cbab1205df)
 
-
 **Usuário 3**
 <br><br>
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/0b5fd19e-998f-4782-a6af-9e228e70baea)
-<br>
+<br><br>
 As respostas das perguntas do teste de usabilidade foram coletadas em uma escala de 1 a 5, onde 1 significa "muito difícil" e 5 significa "muito fácil".
 <br>As respostas dos usuários 1 e 2 indicam que eles consideraram a aplicação de controle de produção de óculos muito fácil de usar e eficaz.
 <br>As respostas do usuário 3 indicam que ele teve algumas dificuldades com a usabilidade da aplicação, principalmente devido à sua pouca experiência em tecnologia
