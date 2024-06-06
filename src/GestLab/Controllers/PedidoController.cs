@@ -139,16 +139,8 @@ namespace GestLab.Controllers
 
             return pedido;
         }
-        public async Task<IActionResult> Relatorio(int? id, int? mes, int? ano)
+        public async Task<IActionResult> Relatorio(int? mes, int? ano)
         {
-            if (id == null)
-                return NotFound();
-
-            var pedido = await _context.Pedido.FindAsync(id);
-
-            if (pedido == null)
-                return NotFound();
-
             var Pedido = await _context.Pedido
                 .Include(x => x.Receita)
                 .OrderByDescending(c => c.DataPedido)
@@ -157,13 +149,9 @@ namespace GestLab.Controllers
 
             var mesAno = $"{mes}/{ano}";
 
-            // Passar os dados para a view
-            ViewBag.Pedido = pedido;
             ViewBag.MesAno = mesAno;
 
-
-            return View(pedido);
-
+            return View("Relatorio", Pedido);
         }
     }
 }

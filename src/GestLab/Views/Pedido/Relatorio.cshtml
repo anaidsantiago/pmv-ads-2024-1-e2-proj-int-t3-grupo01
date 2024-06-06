@@ -1,14 +1,11 @@
 ﻿@model IEnumerable<GestLab.Models.PedidoModel>
 
 @{
-    ViewData["Title"] = "Relatorio";
+    ViewData["Title"] = $"Relatorio {ViewBag.MesAno}";
 }
 
 <h1>Relatorio</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>

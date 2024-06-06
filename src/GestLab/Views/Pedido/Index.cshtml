@@ -10,8 +10,11 @@
     <a href="@Url.Action("Detail", "Pedido", new { id = 0 })" class="btn btn-primary">
         Adicionar
     </a>
-
-    <div class="table-responsive">
+    <a href="@Url.Action("Relatorio", "Pedido", new { mes = DateTime.Today.Month, ano = DateTime.Today.Year })" class="btn btn-warning">
+        Relatorio
+    </a>
+@*     <td>     <a asp-action="Relatorio" asp-route-id="@pedido.Id">@pedido</a> |</td>
+ *@    <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
@@ -26,9 +29,7 @@
             <tbody>
                 @foreach (var pedido in Model)
                 {
-                    <tr>
-                        <td>     <a asp-action="Relatorio" asp-route-id="@pedido.Id">@pedido</a> |</td>
-                        
+                    <tr>                        
                         <th>@pedido.Descricao</th>
                         <td>@pedido.Cliente?.Nome</td>
                         <td>@pedido.Status</td>
