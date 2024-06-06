@@ -3,6 +3,7 @@ using GestLab.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.AspNetCore.Http;
+using GestLab.Shared;
 
 namespace GestLab.Controllers
 {
@@ -27,20 +28,20 @@ namespace GestLab.Controllers
         {
             if (login.Email == "admin@admin.com" && login.Senha == "123!@#")
             {
-                HttpContext.Session.SetInt32(SessionKeyID, 0);
-                HttpContext.Session.SetString(SessionKeyNome, "Administrador");
-                HttpContext.Session.SetString(SessionKeyEmail, login.Email);
-                HttpContext.Session.SetString(SessionKeyTipo, "ADM");
+                HttpContext.Session.SetInt32(Constantes.SessionKeyID, 0);
+                HttpContext.Session.SetString(Constantes.SessionKeyNome, "Administrador");
+                HttpContext.Session.SetString(Constantes.SessionKeyEmail, login.Email);
+                HttpContext.Session.SetString(Constantes.SessionKeyTipo, "ADM");
 
                 return RedirectToAction("Index", "Home");
             }
             else if (_context.Usuarios.Any(x => x.Email == login.Email && x.Senha == login.Senha))
             {
                 UsuarioModel usuario = _context.Usuarios.Where(x => x.Email == login.Email && x.Senha == login.Senha).FirstOrDefault();
-                HttpContext.Session.SetInt32(SessionKeyID, usuario.Id);
-                HttpContext.Session.SetString(SessionKeyNome, usuario.Nome);
-                HttpContext.Session.SetString(SessionKeyEmail, usuario.Email);
-                HttpContext.Session.SetString(SessionKeyTipo, usuario.Tipo);
+                HttpContext.Session.SetInt32(Constantes.SessionKeyID, usuario.Id);
+                HttpContext.Session.SetString(Constantes.SessionKeyNome, usuario.Nome);
+                HttpContext.Session.SetString(Constantes.SessionKeyEmail, usuario.Email);
+                HttpContext.Session.SetString(Constantes.SessionKeyTipo, usuario.Tipo);
 
                 return RedirectToAction("Index", "Home");
             }

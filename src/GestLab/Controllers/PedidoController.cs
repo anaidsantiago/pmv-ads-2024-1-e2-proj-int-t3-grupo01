@@ -24,6 +24,12 @@ namespace GestLab.Controllers
             var pedido = _context.Pedido
                 .Include(x => x.Cliente)
                 .ToList();
+
+            if(Constantes.UsuarioModel.Tipo == Constantes.PerfilCliente)
+            {
+
+            }
+
             return View("Index", pedido);
         }
 
