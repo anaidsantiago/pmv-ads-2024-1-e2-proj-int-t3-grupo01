@@ -25,7 +25,7 @@ Exportação de Relatório: Gerar relatórios com filtros pré-definidos e verif
 **Métricas de Sucesso**
 
 <li>Taxa de Conclusão das Tarefas: Porcentagem de tarefas concluídas com sucesso.
-<li>Número de cliques e interações para completar as tarefas
+<li>Taxa de cliques por tarefa
 <li>Tempo Médio de Conclusão: Tempo médio necessário para concluir cada tarefa.
 <li>Número de Erros por Tarefa: Quantidade de erros cometidos durante a realização das tarefas.
 
@@ -55,13 +55,18 @@ Os resultados são apresentados em tabelas e gráficos, destacando as métricas 
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/fcaa9b95-5f12-4ea6-8944-69fa6db2bf5f)
 
-**Número de cliques e interações para completar as tarefa**s
+**Taxa de cliques por tarefa**
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/06aa6c49-49f5-4814-9b16-e273b6b39f4d)
 
 **Número de erros cometidos pelos participantes**
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/7aa5dc26-1bb6-48d3-bf63-ef82b0d23b91)
+
+**Taxa de conclusão de tarefas**
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/144706915/131ee6f7-9192-44a8-b11e-f38b92a9ecd6)
+
 
 **Feedback Qualitativo**
 
