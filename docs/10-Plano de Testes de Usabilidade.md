@@ -90,6 +90,6 @@ Verifique se o relatório foi exportado corretamente.
 <b>Métricas Coletadas:</b>
 
 - Taxa de conclusão das tarefas.
-- Taxa de sucesso na realização das tarefas.
+- Taxa de cliques por tarefa.
 - Tempo médio para conclusão de cada tarefa.
 - Número médio de erros por tarefa.
