@@ -35,14 +35,15 @@ namespace GestLab.Controllers
             pedido.Aplicar(pedidoView.Pedido);
 
             //gambi provisoria para cliente, campo deve virar um combo com os clientes disponiveis
-            var cliente = _context.Cliente.FirstOrDefault(x => x.Id == pedido.Cliente.Id);
+            var cliente = _context.Cliente.FirstOrDefault(x => x.Id == pedidoView.ClienteId);
             if (cliente == null)
             {
-                var cli = _context.Cliente.Add(new ClienteModel() { Nome = "Cliente manual" });
-                pedido.Cliente = cli.Entity;
+                cliente = _context.Cliente.FirstOrDefault(x => x.Nome == "Cliente manual");
+                if (cliente == null)
+                    cliente = _context.Cliente.Add(new ClienteModel() { Nome = "Cliente manual" }).Entity;
             }
-            else
-                pedido.Cliente = cliente;
+
+            pedido.Cliente = cliente;
 
             var possuiArmacao = pedido.ArmacaoEntreguePeloCliente;
             if (pedido.ArmacaoEntreguePeloCliente && (pedido.Armacao == null || pedido.Armacao.Id == 0))
@@ -110,6 +111,7 @@ namespace GestLab.Controllers
 
             PedidoViewModel pedidoModel = new(pedido);
             pedidoModel.Cores = StaticLists.ObterCores().Select(x => new SelectListItem() { Text = x, Value = x });
+            pedidoModel.Clientes = _context.Cliente.Select(x => new SelectListItem() { Text = x.Nome, Value = x.Id.ToString() });
 
             return View("Detail", pedidoModel);
         }
