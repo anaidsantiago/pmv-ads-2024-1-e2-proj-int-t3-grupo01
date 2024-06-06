@@ -6,7 +6,7 @@ namespace GestLab.Models
     {
         public PedidoViewModel()
         {
-            
+
         }
         public PedidoViewModel(PedidoModel pedido)
         {

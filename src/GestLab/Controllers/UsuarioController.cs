@@ -1,6 +1,8 @@
 using GestLab.Data;
 using GestLab.Models;
+using GestLab.Shared;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace GestLab.Controllers
@@ -19,36 +21,53 @@ namespace GestLab.Controllers
         public IActionResult Index()
         {
             var usuario = _context.Usuarios.ToList();
-            return View("Index",usuario);
+            return View("Index", usuario);
         }
 
         [HttpPost]
-        public IActionResult Detail(UsuarioModel usuario)
+        public IActionResult Detail(UsuarioViewModel usuarioView)
         {
-            if(usuario.Id ==0)
+            var usuario = usuarioView.Usuario;
+
+            if (usuario.Id == 0)
                 _context.Usuarios.Add(usuario);
             else
                 _context.Usuarios.Update(usuario);
-            
+
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        public ActionResult Detail(int? id)
+        public ActionResult Detail(int id)
         {
-            if (id == 0)
-            {
-                return View("Detail", new UsuarioModel());
-            }
+            var usuario = RecuperaUsuario(id);
 
-            if (id == null)
+            if (usuario == null)
             {
                 return NotFound();
             }
 
-            var usuario = _context.Usuarios.Find(id);
+            UsuarioViewModel usuarioModel = new(usuario);
 
-            return View("Detail", usuario);
+            usuarioModel.Tipos = StaticLists.ObterTiposUsuario().Select(x => new SelectListItem() { Text = x, Value = x });
+
+            return View("Detail", usuarioModel);
+        }
+
+        private UsuarioModel RecuperaUsuario(int id)
+        {
+            UsuarioModel usuario = null;
+
+            if (id > 0)
+            {
+                usuario = _context.Usuarios
+                    .Where(x => x.Id == id)
+                    .FirstOrDefault();
+            }
+
+            if (id == 0) usuario = new();
+
+            return usuario;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
