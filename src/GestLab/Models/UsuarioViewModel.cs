@@ -15,7 +15,8 @@ namespace GestLab.Models
             Usuario = usuario;
         }
         public UsuarioModel Usuario { get; set; }
-
+        public int? Cliente { get; set; }
         public IEnumerable<SelectListItem> Tipos { get; set; }
+        public IEnumerable<SelectListItem> Clientes { get; set; }
     }
 }

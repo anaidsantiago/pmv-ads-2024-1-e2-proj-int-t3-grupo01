@@ -3,6 +3,7 @@ using GestLab.Models;
 using GestLab.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace GestLab.Controllers
@@ -20,7 +21,10 @@ namespace GestLab.Controllers
 
         public IActionResult Index()
         {
-            var usuario = _context.Usuarios.ToList();
+            var usuario = _context.Usuarios
+                .Include(x => x.Cliente)
+                .ToList();
+
             return View("Index", usuario);
         }
 
@@ -28,6 +32,15 @@ namespace GestLab.Controllers
         public IActionResult Detail(UsuarioViewModel usuarioView)
         {
             var usuario = usuarioView.Usuario;
+
+            if (usuario.Tipo != Constantes.PerfilCliente)
+                usuario.Cliente = null;
+            else
+            {
+                if (!usuarioView.Cliente.HasValue || usuarioView.Cliente < 1)
+                    throw new Exception("Para usuarios do tipo cliente, o cliente deve ser informado");
+                usuario.Cliente = _context.Cliente.Find(usuarioView.Cliente);
+            }
 
             if (usuario.Id == 0)
                 _context.Usuarios.Add(usuario);
@@ -50,6 +63,10 @@ namespace GestLab.Controllers
             UsuarioViewModel usuarioModel = new(usuario);
 
             usuarioModel.Tipos = StaticLists.ObterTiposUsuario().Select(x => new SelectListItem() { Text = x, Value = x });
+            var clientes = new List<SelectListItem>() { new() { Text = "Usuario interno", Value = null } };
+            clientes.AddRange(_context.Cliente.Select(x => new SelectListItem() { Text = x.Nome, Value = x.Id.ToString() }));
+            usuarioModel.Clientes = clientes;
+            usuarioModel.Cliente = usuario.Cliente?.Id;
 
             return View("Detail", usuarioModel);
         }
@@ -61,6 +78,7 @@ namespace GestLab.Controllers
             if (id > 0)
             {
                 usuario = _context.Usuarios
+                    .Include(x => x.Cliente)
                     .Where(x => x.Id == id)
                     .FirstOrDefault();
             }
