@@ -17,7 +17,7 @@ namespace GestLab.Controllers
         public IActionResult Index()
         {
             var usuario = GetDadosUsuario();
-            if (string.IsNullOrEmpty(usuario.Nome))
+            if (string.IsNullOrEmpty(usuario?.Nome))
                 return RedirectToAction("Index", "Login");
 
             return View(usuario);
