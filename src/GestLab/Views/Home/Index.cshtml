@@ -8,6 +8,10 @@
 
 <div class="text-center">
     <h1 class="display-4">Bem vindo</h1>
-    <p>@(Constantes.UsuarioModel.Nome) - @(Constantes.UsuarioModel.Tipo)</p>
+    <h2>@(Constantes.UsuarioModel.Nome) - @(Constantes.UsuarioModel.Tipo)</h2>
+    @if (Constantes.UsuarioModel.Tipo == Constantes.PerfilCliente)
+    {
+        <p>@(Constantes.UsuarioModel.Cliente?.Nome) - @(Constantes.UsuarioModel.Cliente?.Cnpj)</p>
+    }
 </div>
 

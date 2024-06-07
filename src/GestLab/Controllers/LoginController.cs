@@ -1,21 +1,17 @@
 ﻿using GestLab.Data;
 using GestLab.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.AspNetCore.Http;
 using GestLab.Shared;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GestLab.Controllers
 {
     public class LoginController : ControllerBase
     {
         private readonly ILogger<LoginController> _logger;
-        private readonly GestLabContext _context;
 
-        public LoginController(ILogger<LoginController> logger, GestLabContext context)
+        public LoginController(ILogger<LoginController> logger, GestLabContext context):base(context)
         {
             _logger = logger;
-            _context = context;
         }
 
         public IActionResult Index()
@@ -32,6 +28,8 @@ namespace GestLab.Controllers
                 HttpContext.Session.SetString(Constantes.SessionKeyNome, "Administrador");
                 HttpContext.Session.SetString(Constantes.SessionKeyEmail, login.Email);
                 HttpContext.Session.SetString(Constantes.SessionKeyTipo, "ADM");
+                HttpContext.Session.SetString(Constantes.SessionKeyClienteId, "-1");
+                HttpContext.Session.SetString(Constantes.SessionKeyClienteNome, "");
 
                 return RedirectToAction("Index", "Home");
             }
@@ -42,6 +40,8 @@ namespace GestLab.Controllers
                 HttpContext.Session.SetString(Constantes.SessionKeyNome, usuario.Nome);
                 HttpContext.Session.SetString(Constantes.SessionKeyEmail, usuario.Email);
                 HttpContext.Session.SetString(Constantes.SessionKeyTipo, usuario.Tipo);
+                HttpContext.Session.SetString(Constantes.SessionKeyClienteId, usuario.Cliente?.Id.ToString() ?? "-1");
+                HttpContext.Session.SetString(Constantes.SessionKeyClienteNome, usuario.Cliente?.Nome.ToString() ?? "");
 
                 return RedirectToAction("Index", "Home");
             }

@@ -9,7 +9,7 @@ namespace GestLab.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, GestLabContext context) : base(context)
         {
             _logger = logger;
         }

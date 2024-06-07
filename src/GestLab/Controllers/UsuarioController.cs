@@ -79,8 +79,7 @@ namespace GestLab.Controllers
             {
                 usuario = _context.Usuarios
                     .Include(x => x.Cliente)
-                    .Where(x => x.Id == id)
-                    .FirstOrDefault();
+                    .FirstOrDefault(x => x.Id == id);
             }
 
             if (id == 0) usuario = new();

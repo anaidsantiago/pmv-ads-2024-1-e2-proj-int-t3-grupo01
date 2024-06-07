@@ -25,9 +25,22 @@ namespace GestLab.Controllers
                 .Include(x => x.Cliente)
                 .ToList();
 
-            if(Constantes.UsuarioModel.Tipo == Constantes.PerfilCliente)
+            if (Constantes.UsuarioModel.Tipo == Constantes.PerfilCliente)
             {
-
+                pedido = pedido.Where(x => x.Cliente.Id == Constantes.UsuarioModel.Cliente.Id).ToList();
+            }
+            else if (Constantes.UsuarioModel.Tipo == Constantes.PerfilMontador)
+            {
+                pedido = pedido.Where(x =>
+                (x.MontadorResponsavel?.Id == Constantes.UsuarioModel.Id)
+                &&
+                (x.Status == Constantes.StatusNovo
+                || x.Status == Constantes.StatusPendenteArmacao
+                || x.Status == Constantes.StatusPendenteLentes
+                || x.Status == Constantes.StatusPendenteLenteArmacao
+                || x.Status == Constantes.StatusEmMontagem
+                )
+                ).ToList();
             }
 
             return View("Index", pedido);
@@ -85,13 +98,13 @@ namespace GestLab.Controllers
             }
 
             if (!possuiArmacao && !pedido.PossuiLentesEmEstoque)
-                pedido.Status = "Pendente Lentes e Armação";
+                pedido.Status = Constantes.StatusPendenteLenteArmacao;
             else if (!possuiArmacao)
-                pedido.Status = "Pendente Armação";
+                pedido.Status = Constantes.StatusPendenteArmacao;
             else if (!pedido.PossuiLentesEmEstoque)
-                pedido.Status = "Pendente Lentes";
+                pedido.Status = Constantes.StatusPendenteLentes;
             else
-                pedido.Status = "Novo";
+                pedido.Status = Constantes.StatusNovo;
 
             if (pedido.Id == 0)
             {
@@ -117,6 +130,14 @@ namespace GestLab.Controllers
             PedidoViewModel pedidoModel = new(pedido);
             pedidoModel.Cores = StaticLists.ObterCores().Select(x => new SelectListItem() { Text = x, Value = x });
             pedidoModel.Clientes = _context.Cliente.Select(x => new SelectListItem() { Text = x.Nome, Value = x.Id.ToString() });
+
+            if (Constantes.UsuarioModel.Tipo == Constantes.PerfilCliente)
+            {
+                pedidoModel.Clientes = _context.Cliente
+                    .Where(x => x.Id == Constantes.UsuarioModel.Cliente.Id)
+                    .Select(x => new SelectListItem() { Text = x.Nome, Value = x.Id.ToString() });
+
+            }
 
             return View("Detail", pedidoModel);
         }
