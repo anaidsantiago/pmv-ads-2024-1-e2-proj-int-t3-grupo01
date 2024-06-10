@@ -39,7 +39,7 @@ Cada tipo de usuário terá a sua própria visualização dentro do site, sendo 
 
 Nota: para cada usuário, a fim de testarmos as funcionalidades em desenvolvimento, criamos perfis fictícios, descritos abaixo.
 
-### Visão do administrador:
+### Visão do administrador
 
 Permite ver, editar e excluir Usuários e Produtos:
 
@@ -63,14 +63,13 @@ senha: admin <br>
 
 
 
-#### Visão do Montador:
+#### Visão do Montador
 
 Permite ver e editar pedidos:
 
 
 login: 	mont@mont.com.br <br>
 senha: montador <br>
-("M" maiúsculo)
 
 > Tela inicial
 > <img width="953" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/8002e0e7-929e-4e4b-bdb0-411ac7953989">
@@ -84,7 +83,7 @@ senha: montador <br>
 
 
 
-### Visão do Cliente:
+### Visão do Cliente
 
 
 Os perfis dos clientes serão criados pelo administrador da aplicação. O cliente consegue adicionar pedidos e extrair relatórios.
