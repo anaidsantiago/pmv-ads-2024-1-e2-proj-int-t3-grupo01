@@ -39,6 +39,8 @@ Cada tipo de usuário terá a sua própria visualização dentro do site, sendo 
 
 Nota: para cada usuário, a fim de testarmos as funcionalidades em desenvolvimento, criamos perfis fictícios, descritos abaixo.
 
+
+
 ### Visão do administrador
 
 Permite ver, editar e excluir Usuários e Produtos:
@@ -63,6 +65,11 @@ senha: admin <br>
 
 
 
+
+
+
+
+
 #### Visão do Montador
 
 Permite ver e editar pedidos:
@@ -72,13 +79,19 @@ login: 	mont@mont.com.br <br>
 senha: montador <br>
 
 > Tela inicial
+
 > <img width="953" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/8002e0e7-929e-4e4b-bdb0-411ac7953989">
 
 > Tela de Estoque
+
 > <img width="937" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/1c1a48fd-5443-41f4-8d03-f60053902b49">
 
 >Tela de Pedidos 
+
 > <img width="958" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/b478e9fd-5d99-49a1-bf0b-51f255c9c297">
+
+
+
 
 
 
@@ -94,8 +107,10 @@ Também há um perfil fictício para teste:
 login: cliente1@cli.com.br <br>
 senha: cli <br>
 
+
 > Tela inicial
+
 > <img width="966" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/f1ba186f-03d1-421e-b2ea-adf7d05909dc">
 
 > Tela de pedidos
-<img width="951" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/6bc39267-e0d3-48f1-8fd2-bf2628a25a0e">
+> <img width="951" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t3-grupo01/assets/109355915/6bc39267-e0d3-48f1-8fd2-bf2628a25a0e">
