@@ -9,8 +9,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realizMOA o reg
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - A aplicação deve ser capaz de realizar o cadastro e atualização de usuários |
-|Registro de evidência | cadastro - https://drive.google.com/file/d/1AghrAnfZW6A_FTVKNflXTLAFQC8o9jwc/view?usp=drivesdk 
-edição - https://drive.google.com/file/d/1AghrAnfZW6A_FTVKNflXTLAFQC8o9jwc/view?usp=drivesdk |
+|Registro de evidência | [cadastro](url) e [edição](url)  |
 
 | **Caso de Teste** 	| **CT-02 – Realizar login** 	|
 |:---:	|:---:	|
